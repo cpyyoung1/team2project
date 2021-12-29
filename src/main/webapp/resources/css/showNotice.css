@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+body{
+    background-color: #f7f4f0;;
+    margin: 100px 0px;
+    text-transform: uppercase;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.container{
+    border: 1px solid black;
+    padding: 70px;
+    width: 1200px;
+    margin: 70px auto;
+    background-color: white;
+}
+
+#title{
+    margin-left: 10px;
+    font-size: 40px;
+    text-shadow: darkgrey 5px 5px 5px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+#title2{
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+#content{
+    padding: 20px 50px;
+    overflow: auto;
+}
+
+.btns{
+    text-align: right;
+    margin-right: 10px;
+}
+
+.btn{
+    margin-top: 15px;
+    font-size: 14px;
+    width: 50px;
+    height: 30px;
+    border: 1px black solid;
+    background-color: black;
+    color: white;
+}
+
+.btn:hover{
+    background-color:white;
+    color: black;
+    cursor: pointer;
+}

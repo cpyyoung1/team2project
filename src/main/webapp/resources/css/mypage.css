@@ -1,0 +1,659 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+table
+{
+   border-collapse: collapse;
+}
+
+
+a, a:visited
+{
+   color: #222;
+}
+
+.error
+{
+   color: red;
+   font-size: 12px;
+   font-family: 'Nanum Gothic', sans-serif;
+}
+
+.mypage-wrap
+{
+   overflow: hidden;
+   position: relative;
+   width: 1080px;
+   margin: 0 auto;
+   clear: both;
+   box-sizing: border-box;
+   letter-spacing: -0.03em;
+   font-family: 'Raleway', 'Nanum Gothic', sans-serif;
+}
+
+.mypage-header > h2
+{
+   font-size: 50px;
+   padding-top: 30px;
+   padding-left: 20px;
+   padding-bottom: 37px;
+}
+
+.mypage-modify
+{
+   padding-right: 20px;
+   padding-top: 60px;
+}
+
+.mypage-area
+{
+   height: 340px;
+   border: solid #222;
+   border-width: 2px 0;
+}
+
+.info-area
+{
+   height: 130px;
+}
+
+.info-box
+{
+   width: 250px;
+   padding-top: 40px;
+   padding-left: 90px;
+}
+
+.info-box h3
+{
+   font-size: 22px;
+   padding-bottom: 40px;
+   font-family: 'Nanum Gothic', sans-serif;
+}
+
+.info-box h2
+{
+   font-size: 24px;
+   padding-top: 17px;
+   padding-right: 15px;
+}
+
+.info-tabl
+{
+   width: 40%;
+}
+
+.info-tabl h3
+{
+   font-weight: 400;
+}
+
+.info-tabr
+{
+   width: 60%;
+   text-align: right;
+   font-weight: 800;
+}
+
+.info-halfbox
+{
+   width: 100%;
+   margin-top: 20px;
+   height: 100px;
+   border: 1px solid #222;
+}
+
+.info-halfbox:hover
+{
+   background-color: #FFF;
+   cursor: pointer;
+}
+
+.info-halfbox img
+{
+   position: relative;
+   width: 60px;
+   height: 60px;
+   top: 20px;
+   left: 20px;
+}
+
+.info-halfbox h4
+{
+   font-size: 14px;
+   padding-top: 20px;
+   padding-right: 10px;
+}
+
+.mailbox span
+{
+   color: #ff7200;
+   font-family: 'Nanum Gothic', sans-serif;
+}
+
+
+/* 쪽지함 */
+
+.note-area
+{
+   border: solid #222;
+   border-width: 2px 0;
+}
+
+.note-list-header
+{
+   padding-top: 40px;
+   padding-left: 50px;
+   font-size: 24px;
+}
+
+.note-list-header span
+{
+   margin-top: 5px;
+   width: 50px;
+   height: 6px;
+   background-color: #ff7200;
+   display: block;
+}
+
+.note-list
+{
+   padding-top: 20px;
+   padding-left: 120px;
+   padding-bottom: 80px;
+}
+
+.note-list thead th
+{
+   height: 40px;
+   text-align: center;
+   text-indent: 10px;
+   border-bottom: 2px solid #222;
+}
+
+.note-list tbody td
+{
+   height: 40px;
+   max-width: 600px;
+   font-size: 14px;
+   font-weight: bold;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   border-bottom: 1px solid #DDD;
+}
+
+.note-list tbody td:nth-child(1), .note-list tbody td:nth-child(3), .note-list tbody td:nth-child(4), .note-list tbody td:nth-child(5)
+{
+   text-align: center;
+}
+
+.msg{
+	text-align: center;
+}
+
+.msgHover:hover{
+	cursor:pointer;
+	color:darkgrey;
+}
+
+/* 쪽지상세 */
+
+.note-header
+{
+   width: 100%;
+   height: 50px;
+   padding: 15px 0 10px 120px;
+   border-bottom: 2px solid #222;
+}
+
+.note-info
+{
+   width: 100%;
+   height: 50%;
+}
+
+.note-info h2
+{
+   font-size: 18px;
+   margin-right: 20px;
+}
+
+.note-info h3
+{
+   font-size: 18px;
+   font-weight: normal;
+}
+
+.note-content
+{
+   width: 800px;
+   min-height: 300px;
+   overflow: hidden;
+   font-size: 18px;
+    color: #222;
+    line-height: 1.5em;
+    text-align: left;
+    padding: 50px 0 50px 120px;
+}
+
+
+
+.title-input
+{
+   width: 710px;
+   height: 44px;
+   padding: 14px;
+   padding-left: 24px;
+   font-size: 17px;
+   font-weight: 600;
+   line-height: 10px;
+   overflow: hidden;
+    resize: none;
+    border: 1px solid #DDD;
+    box-sizing: border-box;
+    letter-spacing: -3px;
+}
+
+.content-input
+{
+   width: 710px;
+   height: 300px;
+   margin-left: 85px;
+   padding: 24px;
+   font-size: 17px;
+   font-weight: 600;
+   line-height: 20px;
+   overflow: hidden;
+    resize: none;
+    border: 1px solid #DDD;
+    box-sizing: border-box;
+    letter-spacing: -3px;
+}
+
+/* 내 정보 수정 */
+
+.m-input
+{
+   width: 240px;
+   padding: 10px 10px;
+}
+
+.modify-list
+{
+   width: 700px;
+   padding-top: 70px;
+   padding-left: 200px;
+   padding-bottom: 70px;
+}
+
+.modify-list ul
+{
+   border-top: 1px solid #DDD;
+}
+
+.modify-info
+{
+   height: 50px;
+   padding-top: 20px;
+   padding-left: 40px;
+   line-height: 28px;
+   cursor: pointer;
+   border-bottom: 1px solid #DDD;
+   font-family: 'Nanum Gothic', sans-serif;
+}
+
+.modify-info h2
+{
+   font-weight: 400;
+   font-size: 20px;   
+}
+
+.modify-info-element
+{
+   width: 110px;
+   padding-right: 130px;
+}
+
+
+.modify-info-inner
+{
+   padding: 25px 0 25px 18px;
+   background-color: #f0f0f0;
+   line-height: 1.4;
+   border-bottom: 1px solid #DDD;
+}
+
+.modify-info-input
+{
+   margin-bottom: 30px;
+   padding-left: 20px;
+}
+
+.modify-info-input label
+{
+   display: inline-block;
+   width: 240px;
+   font-size: 20px;
+}
+
+/* 구매내역 조회 */
+
+.purchase-list
+{
+   padding-top: 80px;
+   padding-left: 100px;
+   padding-bottom: 80px;
+   font-family: 'Nanum Gothic', sans-serif;
+   font-weight: bold;
+}
+
+.purchase-list thead th
+{
+   height: 40px;
+   text-align: center;
+   border-bottom: 2px solid #222;
+}
+
+.purchase-list-pic
+{
+   width: 110px;
+   height:110px;
+}
+
+.purchase-list-info
+{
+   text-align: left;
+}
+
+.purchase-list-name
+{
+   color: #222;
+   line-height: 80px;
+   padding-left: 20px;
+}
+
+.purchase-list tbody td
+{
+   height: 120px;
+   border-bottom: 1px solid #DDD;
+   table-layout: fixed;
+}
+
+.purchase-list tbody td:nth-child(1), .purchase-list tbody td:nth-child(3), .purchase-list tbody td:nth-child(4)
+{
+   text-align: center;
+}
+
+
+.orderBox{
+    padding-left: 50px;
+}
+
+.bigBox{
+	margin-top: 100px;
+}
+
+.orderList{
+	min-height: 250px;
+}
+
+/* 찜목록 */
+
+.like-area
+{
+   width: 1300px;
+   padding-bottom: 10px;
+   font-family: 'Nanum Gothic', sans-serif;
+   font-weight: bold;
+   min-height: 250px;
+}
+
+.like-item
+{
+   margin: 20px;
+   padding: 0 10px;
+   width: 25%;
+   box-sizing: border-box;
+   display: inline-block;
+   justify-content: space-around;
+}
+
+.like-pic
+{
+   width: 150px;
+   height: 150px;
+}
+
+.like-info
+{
+   width: 100%;
+   display: table-cell;
+   padding-left: 15px;
+}
+
+.like-name
+{
+   font-size: 18px;
+   padding: 5px 0;
+   overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.like-writer
+{
+   padding-bottom: 5px;
+   font-weight: normal;
+}
+
+.like-btn{
+    width: 45px;
+    height: 25px;
+    margin-top: 50px;
+    background-color: #222;
+    color: white;
+    font-size: 12px;
+}
+
+.like-btn:hover{
+    background-color: #4287f5;
+    border: 1px solid #4287f5;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* 충전 페이지 */
+
+.payment-area
+{
+   min-height: 400px;
+   padding: 50px 0;
+   font-family: 'Nanum Gothic', sans-serif;
+   font-weight: bold;
+}
+
+.current-point
+{
+   margin-left: 90px;
+   padding-bottom: 50px;
+}
+
+.current-point h2
+{
+   font-size: 28px;
+   padding-right: 20px;
+}
+
+.current-point h3
+{
+   font-size: 24px;
+   line-height: 35px;
+   color: #FF0000;
+}
+.payment-item
+{
+   width: 900px;
+   height: 250px;
+   margin: 0 auto 40px auto;
+   box-sizing: border-box;
+}
+
+.payment-content
+{
+   width: 19%;
+   height: 100%;
+   margin-right: 5px;
+   background-color: #FFF;
+   border: 2px solid #DDD;
+   box-sizing: border-box;
+   cursor: pointer;
+}
+
+.payment-content:hover
+{
+   color: #FF0000;
+   border: 2px solid #FF0000;
+}
+
+.payment-point
+{
+   height: 33%;
+   border-bottom: 2px solid #DDD;
+   line-height: 80px;
+   padding-left: 15px;
+}
+
+.payment-point h2
+{
+   font-size: 32px;
+   padding-right: 10px;
+}
+
+.payment-point h3
+{
+   line-height: 88px;
+   font-size: 24px;
+}
+
+.payment-cash
+{
+   height: 67%;
+   padding-top: 15px;
+   padding-left: 15px;
+}
+
+.payment-cash h2
+{
+   font-size: 32px;
+   padding-right: 5px;
+}
+
+.payment-cash h3
+{
+   line-height: 40px;
+   font-size: 24px;
+   padding-bottom: 8px;
+}
+
+.payment-type
+{
+   width: 870px;
+   height: 130px;
+   margin-left: 90px;
+   box-sizing: border-box;
+}
+.payment-type-name
+{
+   padding: 10px 0 10px 20px;
+}
+
+.payment-type-sel
+{
+   padding: 20px;
+   border: solid #222;
+   border-width: 2px 0;
+}
+
+/* 충전 페이지 */
+
+.myboardlist
+{
+   padding-top: 40px;
+   padding-left: 150px;
+   padding-bottom: 40px;
+   font-family: 'Nanum Gothic', sans-serif;
+   font-weight: bold;
+}
+
+.myboardlist thead th
+{
+   height: 40px;
+   border-bottom: 2px solid #222;
+}
+
+.myboardlist tbody td
+{
+   height: 40px;
+   max-width: 600px;
+   font-size: 14px;
+   font-weight: bold;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   border-bottom: 1px solid #DDD;
+}
+
+.myboardlist tbody td:nth-child(1), .myboardlist tbody td:nth-child(3), .myboardlist tbody td:nth-child(4)
+{
+   text-align: center;
+}
+
+.myboardlist tbody td:nth-child(2)
+{
+   text-indent: 10px;
+}
+
+.inner-list
+{
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.inner-list .cmt
+{
+    margin-left: 3px;
+    font-weight: bold;
+    color: #f68400;
+    font-size: 13px;
+}
+
+.btnBox{
+   margin-top: 50px;
+   width:100%;
+   display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*payment*/
+#changePrice{
+	width: 120px;
+	height: 30px;
+	font-size: 18px;
+	background-color: #f7f4f0;
+	border-bottom: 1px solid black;
+}
+
+#changePriceBtn{
+	width: 55px;
+	height: 40px;
+	margin-left: 20px;
+}
+
+#changePriceBtn:hover{
+	cursor: pointer;
+}
+

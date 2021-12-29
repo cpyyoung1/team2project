@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap');
+
+body{
+    background-color: #f7f4f0;
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+.main{
+	margin: 100px 150px;
+}
+
+#tText{
+    font-size: 65px;
+    font-weight: 500;
+    margin: 0px;
+}
+
+
+#main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#container1{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.category{
+    width: 680px;
+    height: 350px;
+    border: none;
+    border-top: solid 1.8px black;
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.cImg{
+    width: 280px;
+    height: 280px;
+}
+
+.cText{
+    width: 350px;
+    height: 280px;
+    padding-top: 100px;
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-weight: lighter;
+    margin: auto;
+    text-align: center;
+}
+
+.cText a{
+    text-decoration: none;
+    color: black;
+}
+
+.searchProduct{
+	width:1200px;
+	margin-top: 50px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align: center;
+}
+
+input{
+	background-color: #f7f4f0;
+	border:none;
+	border: 1px solid black;
+	width:800px;
+	height: 50px;
+	font-size:25px;
+}
+
+#sText{
+	text-transform: uppercase;
+	font-size: 25px;
+	letter-spacing: 4px;
+	font-weight: bold;
+}
+
+#btn{
+	color: black;
+	background-color: #f7f4f0;
+	border: none;
+	width: 100px;
+	font-size:18px;
+	letter-spacing: 3px;
+}
+
+#btn:hover{
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap');
+
+body{
+    background-color: #f7f4f0;
+    margin: 100px 150px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.main{
+    margin-top: 230px;
+}
+
+.error
+{
+   margin-top: 10px;
+   color: red;
+   font-size: 12px;
+}
+
+#title{
+    width: 100%;
+    font-size: 50px;
+    letter-spacing: 8px;
+    text-align: center;
+}
+
+table{
+    width: 400px;
+    border-collapse: collapse;
+    border: none;
+    margin: auto;
+}
+
+.box{
+    font-size: 20px;
+    border-bottom: 1px black solid;
+    height: 60px;
+    letter-spacing: 3px;
+}
+
+#rememberId{
+    margin-top: 10px;
+}
+
+.tText a{
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.tText a:hover{
+    text-decoration: underline;
+    transition: all 0.5s;
+}
+
+.tText{
+    height: 30px;
+    text-align: right;
+}
+
+.btnBox{
+    border-bottom: none;
+    text-align: center;
+}
+
+.btn{
+    width: 100%;
+    height: 32px;
+    background-color: #f7f4f0;
+    border: 1px black solid;
+    cursor: pointer;
+    letter-spacing: 2px;
+    background-color: black;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+}
+
+.btn:hover{
+    background-color: white;
+    color: black;
+    transition: all 0.5s;
+}
+
+.search{
+    margin-left: 5px;
+}
+
+.form{
+    width: 100%;
+    border:none;
+    background-color: #f7f4f0;
+    height: 40px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}

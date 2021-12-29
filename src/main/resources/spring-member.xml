@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.1.xsd">
+
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+		<property name="driverClass" value="oracle.jdbc.OracleDriver" />
+		<property name="jdbcUrl" value="jdbc:oracle:thin:@ttottofam.site:1522:XE" />
+		<property name="user" value="team2" />
+		<property name="password" value="4321" />
+	</bean>
+
+	<bean id="transacrionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+	<tx:annotation-driven transaction-manager="transacrionManager" />
+
+	<bean id="memberDao" class="spring.dao.MemberDao">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+	<bean id="memberRegSvc" class="spring.service.MemberRegisterService">
+		<constructor-arg ref="memberDao" />
+	</bean>
+
+	<bean id="productDAO" class="spring.dao.ProductDAO">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+
+	<bean id="productRegSvc" class="spring.service.ProductRegisterService">
+		<constructor-arg ref="productDAO"></constructor-arg>
+	</bean>
+
+
+	<bean id="authSvc" class="spring.service.AuthService">
+		<property name="memberDao" ref="memberDao" />
+	</bean>
+
+
+	<bean class="spring.service.BoardServiceImpl" id="BoardServiceImpl">
+		<property name="dao" ref="BoardDAO" />
+	</bean>
+
+
+	<bean class="spring.dao.BoardDAOImpl" id="BoardDAO">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	
+	
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="maxUploadSize" value="52428800"></property>
+		<property name="maxInMemorySize" value="100000000"></property>
+		<property name="defaultEncoding" value="UTF-8"></property>
+	</bean>
+	
+	<bean id="noticeDAO" class="spring.dao.NoticeDAO">
+      <property name="dataSource" ref="dataSource"/>
+   </bean>
+   
+   <bean id="noticeRegisterService" class="spring.service.NoticeRegisterService">
+      <constructor-arg ref="noticeDAO" />
+   </bean>
+   
+   <bean id="faqDAO" class="spring.dao.FaqDAO">
+      <property name="dataSource" ref="dataSource"/>
+   </bean>
+   
+   <bean id="faqRegisterService" class="spring.service.FaqRegisterService">
+      <constructor-arg ref="faqDAO" />
+   </bean>
+   
+   <bean id="faqMenuDAO" class="spring.dao.FaqMenuDAO">
+      <property name="dataSource" ref="dataSource"/>
+   </bean>
+   
+   <bean id="faqMenuRegisterService" class="spring.service.FaqMenuRegisterService">
+      <constructor-arg ref="faqMenuDAO" />
+   </bean>
+
+    <bean id="messageDao" class="spring.dao.MessageDao">
+      <property name="dataSource" ref="dataSource"/>
+      </bean>
+      
+     <bean id="messageService" class="spring.service.MessageService">
+      <property name="messageDao" ref="messageDao" />
+   </bean>
+
+
+</beans>

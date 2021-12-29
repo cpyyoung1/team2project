@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+*{
+    margin: 0px;
+}
+
+body{
+    text-transform: uppercase;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.main{
+	margin: 50px auto;
+}
+
+#miniSize{
+	width: 1000px;
+	height: 30px;
+	color: black;
+	font-size:20px;
+	text-align: right;
+	letter-spacing: 3px;
+}
+
+
+#icon:checked+div{
+    display: block;
+}
+
+#icon{
+    display: none;
+}
+
+#label{
+    cursor: pointer;
+}
+
+div.container{
+    margin: 50px auto;
+}
+
+#title2{
+	width: 1000px;
+    margin: 30px auto;
+    font-size: 26px;
+    letter-spacing: 5px;
+}
+
+.tbl{
+    margin: 30px auto;
+    width: 1000px;
+    text-align: center;
+    font-size: 16px;
+    border-collapse: collapse;
+    border: 1px dotted black;
+}
+
+tr{
+    height: 55px;
+    letter-spacing: 2px;
+    border: 1px dotted black;
+}
+
+.property{
+    font-weight: bold;
+    font-size: 16px;
+    background-color:  #f9fae1;
+}
+
+.click{
+    color: darkgrey;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.click:hover{
+    color: black;
+    transition: all 0.5s;
+}
+
+.searchId{
+	width:1000px;
+	margin: 0px auto;
+	text-align: right;
+	
+}
+
+input{
+	background-color: #f7f4f0;
+	border-bottom: 1px solid black;
+}
+
+#btn{
+	width: 48px;
+	height: 28px;
+	text-align: center;
+	background-color: black;
+	color: white;
+	border: 1px solid black;
+}
+
+#btn:hover{
+	cursor: pointer;
+	background-color: white;
+	color: black;
+}
+

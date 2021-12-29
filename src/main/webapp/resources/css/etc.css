@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+.container
+{
+   overflow: hidden;
+   position: relative;
+   width: 1080px;
+   min-height: 400px;
+   margin: 0 auto;
+   clear: both;
+   font-family: 'Nanum Gothic', sans-serif;
+}
+
+.info-box
+{
+   padding-top: 150px;
+   text-align: center;
+   margin: 0 auto;
+}
+
+.info-box-bottom
+{
+   margin-top: 20px;
+}

@@ -1,0 +1,180 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #F7F4F0;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+#sTitle{
+    font-size: 45px;
+    letter-spacing: 7px;
+    margin: 60px auto 0px auto;
+    text-align: center;
+    font-family: 'Raleway', 'Nanum Gothic', sans-serif;
+    text-transform: uppercase;
+}
+
+#titleLine{
+    width: 120px;
+    height: 4px;
+    margin: 10px auto;
+      background-color: #ff7200;     
+}
+
+#directContent{
+    display: none;
+}
+
+#directContent:checked{
+    display: block;
+}
+
+.main{
+    width: 1100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 100px auto;
+}
+
+.pay{
+    width: 500px;
+    /* border: 1px solid black; */
+}
+
+.radioBtn{
+    margin-top: 40px;
+}
+
+.radioBtn>label{
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.bigBox{
+    margin-top: 80px;
+}
+
+#smallText{
+    font-size: 12px;
+    color: rgb(54, 54, 54);
+}
+
+.address{
+    margin-top: 30px;
+}
+
+.textBox{
+    border: 1px rgb(114, 114, 114) solid;
+    width: 400px;
+    height: 25px;
+}
+
+#margin{
+    margin-bottom: 50px;
+}
+
+.message{
+    margin-left: 10px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#dMsg{
+    margin-top: 15px;
+    margin-left: 10px;
+    border: 1px solid black;
+    width: 450px;
+    height: 25px;
+}
+
+.orderTitle{
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-shadow: darkgrey 5px 5px 5px;
+}
+
+.productContent{
+    display: flex;
+    flex-direction: row;
+}
+
+.productText{
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    justify-content: space-around;
+}
+
+img{
+    border: 1px dotted black;
+}
+
+.payMoney{
+	margin-left: 30px;
+    padding: 30px;
+    width: 400px;
+    height: 480px;
+    background-color: white;
+    border: 1px black dotted;
+}
+
+.bigBox2{
+    padding-bottom: 20px;
+    border-bottom: 1px rgb(90, 90, 90) solid;
+}
+
+.payTitle{
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-shadow: darkgrey 5px 5px 5px;
+}
+
+.innerPayMoney{
+    padding: 30px 0px;
+}
+
+.pText{
+    margin: 10px;
+    font-size: 17px;
+}
+
+#line{
+    border-bottom: 1px rgb(90, 90, 90) solid;
+    margin: 30px 0px;
+}
+
+.total{
+    font-size: 30px;
+    text-shadow: rgb(179, 179, 179) 5px 5px 5px;
+}
+
+.btn-form2
+{
+   font-weight: bold;
+   background-color: #222;
+   border: 1px solid #222;
+   color: #fff;
+   text-align: center;
+   padding: 10px;
+   font-family: 'Nanum Gothic', sans-serif;
+   width: 120px;
+   height: 40px;
+}
+
+.btn-form2:hover
+{
+   background-color: #4287f5;
+   border: 1px solid #4287f5;
+   color: #fff;
+   cursor: pointer;
+}
+
+#btnBox{
+    text-align: center;
+}

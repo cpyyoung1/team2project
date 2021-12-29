@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd">
+
+	<mvc:view-controller path="/main" view-name="main" />
+	<!-- /main이라는 경로로 들어올 경우 바로 main.jsp로 연결 -->
+
+	<mvc:view-controller path="/**/main"
+		view-name="main" />
+
+	<mvc:view-controller path="/" view-name="main" />
+
+	<bean class="spring.controller.RegisterController">
+		<property name="memberRegisterService" ref="memberRegSvc" />
+	</bean>
+
+	<bean class="spring.controller.LoginController">
+		<property name="authService" ref="authSvc" />
+	</bean>
+
+	<bean class="spring.controller.LogoutController">
+	</bean>
+
+	<bean class="spring.controller.ProductController">
+		<property name="productRegisterService" ref="productRegSvc"></property>
+		<property name="messageService" ref="messageService" />
+		<property name="messageDao" ref="messageDao" />
+	</bean>
+
+
+	<bean class="spring.controller.BoardController">
+		<property ref="BoardDAO" name="BoardDAO" />
+		<property ref="BoardServiceImpl" name="boardservice" />
+	</bean>
+
+	<bean class="spring.controller.AdminController">
+		<property name="memberDao" ref="memberDao"></property>
+		<property name="productDAO" ref="productDAO"></property>
+		<property name="noticeDAO" ref="noticeDAO"></property>
+		<property name="noticeRegisterService" ref="noticeRegisterService"></property>
+		<property name="faqDAO" ref="faqDAO"></property>
+		<property name="faqRegisterService" ref="faqRegisterService"></property>
+		<property name="faqMenuDAO" ref="faqMenuDAO"></property>
+		<property name="faqMenuRegisterService" ref="faqMenuRegisterService"></property>
+		<property name="BoardDAO" ref="BoardDAO"></property>
+	</bean>
+
+	<bean class="spring.controller.SupportController">
+		<property name="noticeDAO" ref="noticeDAO"></property>
+		<property name="faqDAO" ref="faqDAO"></property>
+		<property name="faqMenuDAO" ref="faqMenuDAO"></property>
+		<property name="memberDao" ref="memberDao"></property>
+	</bean>
+
+	<bean class="spring.controller.MypageController">
+		<property name="BoardDAO" ref="BoardDAO"></property>
+		<property name="productDAO" ref="productDAO"></property>
+		<property name="memberDao" ref="memberDao"></property>
+		<property name="authService" ref="authSvc" />
+		<property name="messageDao" ref="messageDao" />
+		<property name="messageService" ref="messageService" />
+	</bean>
+
+	<bean class="spring.controller.ProductDetailController">
+		<property name="memberDao" ref="memberDao"></property>
+		<property name="productDAO" ref="productDAO"></property>
+	</bean>
+
+	<bean class="spring.controller.FileUploadController"></bean>
+
+	<bean class="spring.controller.FileDownloadController"></bean>
+
+
+
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<!-- 1. 인터셉터를 어디에 적용할 것인가? 2. 어떤 인터셉터를 사용할 것인가? -->
+			<!-- 어디에 -->
+			<mvc:mapping path="/edit/**" />
+			<!-- 어떤 인터셉터 -->
+			<bean class="spring.interceptor.AuthCheckInterceptor" />
+
+		</mvc:interceptor>
+		<!-- <mvc:interceptor> </mvc:interceptor> -->
+	</mvc:interceptors>
+
+</beans>

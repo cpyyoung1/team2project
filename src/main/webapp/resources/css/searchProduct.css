@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap');
+
+body{
+    background-color: #f7f4f0;;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+}
+
+.main{
+	margin: 50px 150px;
+}
+
+.hBar{
+    display: flex;
+    flex-direction: row;
+}
+
+#title{
+    width: 630px;
+    font-size: 55px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+div#title{
+   text-align: left;
+   padding-left: 0px;
+}
+
+ul.productUl{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    margin-top: 60px;
+}
+
+.bList{
+    margin-left: 80px;
+}
+
+.bList a{
+    color: black;
+    text-decoration: none;
+}
+
+.bList a:hover{
+    color: rgb(187, 187, 187);
+}
+
+.now{
+    text-decoration: underline;
+}
+
+.container{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bigBox{
+    display: inline-block;
+}
+
+.box{
+    width: 330px;
+    height: 410px;
+    padding: 10px;
+    border: black 1px dotted;
+    background-color: white;
+    margin-right: 18px;
+    margin-left: 18px;
+    margin-bottom: 85px;
+}
+
+.box a{
+    color: black;
+    text-decoration: none;
+}
+
+.box a:hover{
+    color: white;
+}
+
+.box:hover{
+    background-color: rgb(85, 85, 85);
+    transition: all 0.5s;
+}
+
+.productPictureName{
+    width: 310px;
+    height: 310px;
+    padding: 10px;
+    border: black 1px dotted;
+    background-color: #f7f4f0;
+}
+
+.productName{
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.box{
+    position: relative;
+    display: inline-block;
+}
+.box img{
+    max-width: 100%;
+}
+.box span.text{
+    position: absolute;
+    top: 37%;
+    display: none;
+    width: 100%;
+    font-size: 45px;
+    color: white;
+    text-align: center;
+}
+
+.box::before, .box::after{
+    position: absolute;
+    top: 70%;
+}
+
+.box:hover span.text{
+    display: block;
+    transition: all 0.5s;
+}
+
+
+.sidebar{
+    position: fixed;
+    float: right;
+    top: 200px;
+    right: 70px;
+    padding: 7px;
+}
+
+.btn{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: rgb(248, 244, 226);
+    border: 1px solid darkgrey;
+    color: rgb(63, 63, 63);
+    text-transform: uppercase;font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.btn:hover{
+    background-color: rgb(63, 63, 63);
+    color: white;
+    animation: ani 0.7s linear infinite;
+    cursor: pointer;
+}
+
+@keyframes ani{
+    0%{transform: rotate(0deg);}
+    25%{transform: rotate(7deg);}
+    50%{transform: rotate(0deg);}
+    75%{transform: rotate(-7deg);}
+    100%{transform: rotate(0deg);}
+}
+
+.searchProduct{
+	width:1200px;
+	margin-top: 50px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align: center;
+}
+
+input{
+	background-color: #f7f4f0;
+	border:none;
+	border: 1px solid black;
+	width:800px;
+	height: 50px;
+	font-size:25px;
+}
+
+#sText{
+	text-transform: uppercase;
+	font-size: 25px;
+	letter-spacing: 4px;
+	font-weight: bold;
+}
+
+#btn{
+	color: black;
+	background-color: #f7f4f0;
+	border: none;
+	width: 100px;
+	font-size:18px;
+	letter-spacing: 3px;
+}
+
+#btn:hover{
+	cursor: pointer;
+}
+
+#result{
+	font-size: 18px;
+	margin: 20px auto;
+	text-align: center;
+	font-family: 'Nanum Gothic', sans-serif;
+	color:  rgb(37, 37, 37);
+	letter-spacing: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+body{
+    background-color: #eee6dd;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.main{
+    margin: 30px auto;
+    width: 1850px;
+    height: 900px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.btn{
+    float: left;
+    position: fixed;
+    top: 50%;
+    left: 10px;
+    z-index: 10;
+    display: none;
+    /*display: flex;*/
+    flex-direction: column;
+}
+
+.none{
+    display: none;
+    cursor: pointer;
+}
+
+.btn:hover>span.none{
+    display: block;
+}
+
+.menuBar{
+    width: 450px;
+    height: 100%;
+    background-color:  #eee6dd;
+    padding: 10px;
+    display: none;
+    position: fixed;
+    float: left;
+}
+
+ol{
+    margin-top: 100px;
+    list-style: none;
+}
+
+ol li{
+    font-size: 45px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+    color: darkgrey;
+    font-weight: lighter;
+}
+
+ol li:hover{
+    border-bottom: 1px darkgrey solid;
+    transition: all 1s;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+#btns:checked+div.menuBar{
+    display: block;
+    z-index: 10;
+}
+
+input{
+    display: none;
+}
+
+#sofa:checked~div.galleryBox>div>div{
+    opacity: 10%;
+    transition: all 1s;
+}
+
+#sofa:checked~div.galleryBox>div>div.sofa{
+    opacity: 100%;
+    transition: all 1s;
+}
+
+#bed:checked~div.galleryBox>div>div{
+    opacity: 10%;
+    transition: all 1s;
+}
+
+#bed:checked~div.galleryBox>div>div.bed{
+    opacity: 100%;
+    transition: all 1s;
+}
+
+#table:checked~div.galleryBox>div>div{
+    opacity: 10%;
+    transition: all 1s;
+}
+
+#table:checked~div.galleryBox>div>div.table{
+    opacity: 100%;
+    transition: all 1s;
+}
+
+#lighting:checked~div.galleryBox>div>div{
+    opacity: 10%;
+    transition: all 1s;
+}
+
+#lighting:checked~div.galleryBox>div>div.lighting{
+    opacity: 100%;
+    transition: all 1s;
+}
+
+#drawer:checked~div.galleryBox>div>div{
+    opacity: 10%;
+    transition: all 1s;
+}
+
+#drawer:checked~div.galleryBox>div>div.drawer{
+    opacity: 100%;
+    transition: all 1s;
+}
+
+#acc:checked~div.galleryBox>div>div{
+    opacity: 10%;
+    transition: all 1s;
+}
+
+#acc:checked~div.galleryBox>div>div.acc{
+    opacity: 100%;
+    transition: all 1s;
+}
+
+#all:checked~div.galleryBox>div>div{
+    opacity: 100%;
+    transition: all 1s;
+}
+
+
+.sidebar{
+    width: 250px;
+    height: 100%;
+}
+
+
+
+#title{
+    margin-top: 280px;
+    margin-left: 40px;
+    font-size: 22px;
+    font-weight: bold;
+    text-shadow: gray 5px 5px 8px;
+}
+
+ul{
+    list-style: none;
+    letter-spacing: 2px;
+    font-size: 17px;
+    margin-left: 20px;
+}
+
+ul li{
+    margin-bottom: 15px;
+} 
+
+ul li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: darkgrey;
+    transition: all 1s;
+}
+
+.galleryBox{
+    width: 1600px;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+}
+
+
+.galleryBox::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.innerBox{
+    position: relative;
+    width: 318px;
+    height: 223px;
+    padding: 1px;
+}
+
+.gallery img{
+    width: 318px;
+    height: 223px;
+    opacity: 90%; 
+}
+
+.innerBox div.innerText{
+    position: absolute;
+    top: 45%;
+    left: 0;
+    /* transform: translateY(50%); */
+    display: none;
+    width: 100%;
+    font-size: 30px;
+    color: rgb(77, 76, 76);
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.innerBox::before, .innerBox::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    height: 90%;
+    transform: translate(-50%,-50%);
+    transition: all .8s;
+}
+
+.innerBox::after{
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    height: 0;
+}
+.innerBox:hover div.innerText{display: block;}
+.innerBox:hover img{opacity: 20%;}
+.innerBox:hover::after{height: 100%;}
